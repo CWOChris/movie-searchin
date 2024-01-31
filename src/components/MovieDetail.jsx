@@ -10,6 +10,11 @@ function MovieDetail(props) {
       <h3>Director(s): {props.director}</h3>
       <h3>Genre: {props.genre}</h3>
       <h3>Released: {props.released}</h3>
+      <h3>Runtime: {props.runtime}</h3>
+      <h3>Plot: {props.plot}</h3>
+      <h3>Actors: {props.actors}</h3>
+      <h3>Awards: {props.awards}</h3>
+      <h3>Ratings: {props.ratings}</h3>
     </div>
   );
 }

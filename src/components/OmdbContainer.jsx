@@ -25,6 +25,7 @@ const OmdbContainer = () => {
     setSearch(e.target.value);
   };
 
+  // TODO: Fix the handleInputChange function
   const handleFormSubmit = (e) => {
     e.preventDefault();
     searchMovie(search);
@@ -37,6 +38,11 @@ const OmdbContainer = () => {
     Director = '',
     Genre = '',
     Released = '',
+    Runtime = '',
+    Plot = '',
+    Actors = '',
+    Awards = '',
+    Ratings = '',
   } = result;
 
   /* Fall back to default header if `Title` is undefined
@@ -55,6 +61,11 @@ const OmdbContainer = () => {
                 director={Director}
                 genre={Genre}
                 released={Released}
+                runtime={Runtime}
+                plot={Plot}
+                actors={Actors}
+                awards={Awards}
+                ratings={Ratings}
               />
             ) : (
               <h3>No Results to Display</h3>
